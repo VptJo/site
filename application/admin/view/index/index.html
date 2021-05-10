@@ -1,0 +1,29 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">网站概览</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <table class="layui-table">
+                    <tr>
+                        <td style="font-size: 18px;width: 180px;">当前会员总数</td>
+                        <td style="font-size: 18px;">{$total_member}</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 18px;">今日注册会员</td>
+                        <td style="font-size: 18px;">{$today_member}</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 18px;">今日登录会员</td>
+                        <td style="font-size: 18px;">{$today_login}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

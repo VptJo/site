@@ -1,0 +1,151 @@
+/*后台公用样式*/
+.layui-tab-content{min-height: 500px;}
+.img-see{
+	display: block !important;margin-bottom: 20px;width: 250px;height: 250px;
+}
+.photo-see{
+	margin-bottom: 20px;width: 200px;height: 200px;margin: 10px;
+}
+.photo-list{
+	margin: 10px;display: inline;
+}
+
+.thumb{
+	width: 80px;height: 80px;display: block;margin: 0 auto;
+}
+
+/**
+ * 日历
+ */
+.calendar {
+	border: #5FB878 solid 1px;
+	color: #5FB878;
+}
+.calendar tr td{
+	border: #5FB878 solid 1px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+.login {background: url(../images/login-bg.png) #56bc94;}
+.login .login-title {color: #fff;text-align: center;font-size: 20px;margin-top: 200px;}
+.login .login-form {max-width: 450px;margin: 10px auto;position: relative;left: -50px;color: #fff;}
+.login .login-form .captcha {width: 140px;height: 38px;}
+.login .login-form input {background-color: rgba(255, 255, 255, 0.3);border: 1px solid rgba(255, 255, 255, 0.3);color: #fff;}
+.login .login-form button {width: 100%;background-color: #048f74;}
+
+.logo {margin-top: 25px;margin-left: 25px;}
+
+.header {background-color: #393D49;}
+.header .user-action {position: absolute;right: 15px;top: 25px;}
+.header .user-action a {color: #e2e2e2;padding: 0 10px;}
+
+.footer {line-height: 44px;}
+
+.layui-body {left: 210px;}
+.layui-side {top: 60px;}
+.layui-tab-title > li > a {display: block;}
+.layui-btn-normal {background: #4caf50;}
+.layui-btn-danger {background: #e90d24;}
+
+.form-container {max-width: 800px;}
+
+/*分页*/
+.pagination {}
+.pagination li {display: inline-block;margin-right: -1px;padding: 5px;border: 1px solid #e2e2e2;min-width: 20px;text-align: center;}
+.pagination li.active {background: #009688;color: #fff;border: 1px solid #009688;}
+.pagination li a {display: block;text-align: center;}
+
+
+/* 自定义css */
+.tab-row{
+	display: inline;width: 45%;float: left;margin-bottom: 8px;
+}
+.android-view {
+	margin-top: 10px;
+	height: 670px;
+	width: 377px;
+	background: url(../images/android.jpg);
+}
+
+.android-time {
+	font-size: 8px;
+	text-align: center;
+	color: white;
+	padding-top: 2px;
+}
+
+.android-title {
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	color: white;
+	padding-top: 13px;
+	padding-bottom: 10px;
+}
+
+.android-content {
+	width: 377px;
+	font-size: 12px;
+	padding-top: 10px;
+	margin-left: 10px;
+}
+
+.android-content .zuan {
+	border-radius: 5px;
+	background-color: #E73234;
+	color: white;
+	width: 25px;
+	height: 25px;
+	padding: 5px 7px;
+	display: inline;
+}
+
+.android-content td {
+	height: 26px;
+}
+
+.ios-view {
+	margin-top: 10px;
+	height: 670px;
+	width: 377px;
+	background: url(../images/ios.jpg);
+}
+
+.ios-time {
+	font-size: 8px;
+	text-align: center;
+	color: white;
+	padding-top: 2px;
+}
+
+.ios-title {
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	color: white;
+	padding-top: 13px;
+	padding-bottom: 10px;
+}
+
+.ios-content {
+	width: 377px;
+	font-size: 12px;
+	padding-top: 10px;
+	margin-left: 10px;
+}
+
+.ios-content .zuan {
+	border-radius: 5px;
+	background-color: #E73234;
+	color: white;
+	width: 25px;
+	height: 25px;
+	padding: 5px 7px;
+	display: inline;
+}
+
+.ios-content td {
+	height: 26px;
+}

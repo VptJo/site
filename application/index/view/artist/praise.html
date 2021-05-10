@@ -1,0 +1,111 @@
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="applicable-device" content="mobile" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>热度排行榜</title>
+		<link href="__CSS__/public.css" rel="stylesheet" type="text/css" />
+		<link href="__CSS__/praise.css" rel="stylesheet" type="text/css">
+
+		<script src="__JS__/jquery-1.8.3.min.js"></script>
+		<script>
+			$(window).load(function() {
+				$("#status").fadeOut();
+				$("#preloader").delay(350).fadeOut("slow");
+			})
+		</script>
+		<style>
+			a {
+				text-decoration: none
+			}
+			
+			.num-top {
+				width: 18px;
+				height: 17px;
+				color: #fff;
+				text-align: center;
+				display: inline;
+				float: left;
+				font-size: 15px;
+				line-height: 15px;
+				background: red;
+				border: 1px solid red;
+			}
+			
+			.num-top1 {
+				width: 18px;
+				height: 17px;
+				color: #fff;
+				text-align: center;
+				display: inline;
+				float: left;
+				font-size: 15px;
+				line-height: 15px;
+				background: #C0C1C3;
+				border: 1px solid #C0C1C3;
+			}
+		</style>
+	</head>
+
+	<body class="bg-star">
+		<div class="mobile">
+			<!--页面加载 开始-->
+			<div id="preloader">
+				<div id="status">
+					<p class="center-text"><span>数据加载中···</span></p>
+				</div>
+			</div>
+			<!--页面加载 结束-->
+			<!--header 开始-->
+			<header>
+				<div class="header" style="background: #4D79FF;">
+					<h2>排行榜</h2>
+				</div>
+			</header>
+			
+			<div class="guanggao">
+				<img src="__IMG__/ad-01.jpg" />
+			</div>
+			<!--header 结束-->
+			<div class="sideRighr">
+				<div class="mxrq_tit"><i>&nbsp;</i><strong>明星排行榜</strong></div>
+				<div class="nannv_nav">
+					<a href="{:url('artist/praise',array('type'=>1))}" ><span id="sex_t0" {if condition="$type==1"}class="current" {/if}>点赞次数</span></a>
+					<a href="{:url('artist/praise',array('type'=>2))}" ><span id="sex_t1" {if condition="$type==2"}class="current" {/if}>点击次数</span></a>
+				</div>
+				<div class="mx_list">
+					<div id="sex_jt" class="click_jt"></div>
+					<div id="sex_0">
+						<ul>
+							{foreach name='list' item='vo'}
+							<li>
+								<div class="mx_img">
+									<i class="rqpm_shuzi number1">{$key+1}</i>
+									<a href="{:url('artist/detail',array('id'=>$vo.id))}">
+										<img src="{$vo.thumb}" style="width: 60px;height: 60px;border-radius: 100%;margin-left: 30px;" /></a>
+								</div>
+								<div class="fensi">
+									<div>
+										<a href="{:url('artist/detail',array('id'=>$vo.id))}" target="_blank">{$vo.title}</a>
+									</div>
+									<div>
+										{if condition="$type==1"}<i><img src="__IMG__/zan.png"/>&nbsp;{$vo.praise}</i>{else}
+										<i><img src="__IMG__/click.png"/>&nbsp;<span style="margin-top: 3px;">{$vo.clicks}</span></i>
+										 {/if}
+										</div>
+								</div>
+								<a class="more" href="{:url('artist/detail',array('id'=>$vo.id))}"></a>
+							</li>
+							{/foreach}
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="copyright">Copyright © 2017-2018 版权所有</div>
+		</div>
+	</body>
+
+</html>
