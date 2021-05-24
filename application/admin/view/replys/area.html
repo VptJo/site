@@ -1,0 +1,59 @@
+{extend name="base" /} {block name="body"}
+<div class="layui-body">
+	<!--tab标签-->
+	<div class="layui-tab layui-tab-brief">
+		<ul class="layui-tab-title">
+			<li class="layui-this">场地评论审核</li>
+		</ul>
+		<div class="layui-tab-content">
+			<div class="layui-tab-item layui-show">
+
+				<form class="layui-form layui-form-pane" action="{:url('admin/replys/area')}" method="get">
+					<div class="layui-inline">
+						<label class="layui-form-label">关键词</label>
+						<div class="layui-input-inline">
+							<input type="text" name="keyword" value="{$keyword}" placeholder="请输入关键词" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-inline">
+						<button class="layui-btn">搜索</button>
+					</div>
+				</form>
+				<hr>
+
+				<table class="layui-table">
+					<thead>
+						<tr>
+							<th>姓名</th>
+							<th>内容</th>
+							<th>回复时间</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						{foreach name="list" item="vo"}
+						<tr>
+							<td>{$vo.name}</td>
+							<td>{$vo.message}</td>
+							<td>{$vo.add_time}</td>
+							<td>
+								<a href="{:url('admin/replys/area_audit',['id'=>$vo['id']])}" class="layui-btn layui-btn-normal layui-btn-small ajax-do">通过</a>
+								<a href="{:url('admin/replys/area_del',['id'=>$vo['id']])}" class="layui-btn layui-btn-danger layui-btn-small ajax-delete">删除</a>
+							</td>
+						</tr>
+						{/foreach}
+					</tbody>
+				</table>
+				<!--分页-->
+				{$list->render()}
+			</div>
+		</div>
+	</div>
+</div>
+{/block} {block name="script"}
+<script>
+	var GV = {
+		current_controller: "admin/{$controller}/area"
+	};
+</script>
+{/block}

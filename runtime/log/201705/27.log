@@ -567,3 +567,687 @@
 [ info ] [ LOG ] INIT File
 
 ---------------------------------------------------------------
+[ 2017-05-27T14:29:39+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] ss.cn/ [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：1,250.50kb] [文件加载：45]
+[ info ] [ LANG ] E:\web\site\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ss.cn/a/lianxiwomen/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3080.5 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ss.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ E:\web\site\application\index\controller\IndexController.php ]
+[ info ] [ VIEW ] E:\web\site/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-27T14:31:00+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] ss.cn/ [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,250.50kb] [文件加载：45]
+[ info ] [ LANG ] E:\web\site\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ss.cn/a/gongsishili/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3080.5 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ss.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ E:\web\site\application\index\controller\IndexController.php ]
+[ info ] [ VIEW ] E:\web\site/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-27T14:32:41+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] ss.cn/ [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,250.26kb] [文件加载：45]
+[ info ] [ LANG ] E:\web\site\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3080.5 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ss.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ E:\web\site\application\index\controller\IndexController.php ]
+[ info ] [ VIEW ] E:\web\site/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-27T14:32:47+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] ss.cn/index.php [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：1,250.19kb] [文件加载：45]
+[ info ] [ LANG ] E:\web\site\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3080.5 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ss.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ E:\web\site\application\index\controller\IndexController.php ]
+[ info ] [ VIEW ] E:\web\site/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-27T14:32:58+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin
+[ log ] ss.cn/index.php/admin [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：1,224.70kb] [文件加载：44]
+[ info ] [ LANG ] E:\web\site\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3080.5 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ss.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-27T14:32:58+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/login/index.html
+[ log ] ss.cn/index.php/admin/login/index.html [运行时间：0.026001s][吞吐率：38.46req/s] [内存消耗：1,343.25kb] [文件加载：46]
+[ info ] [ LANG ] E:\web\site\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rkiihr2e884gssmdeechf3plh4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3080.5 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ss.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\LoginController->index[ E:\web\site\application\admin\controller\LoginController.php ]
+[ info ] [ VIEW ] E:\web\site/application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-27T14:32:58+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/captcha.html
+[ log ] ss.cn/index.php/captcha.html [运行时间：0.064003s][吞吐率：15.62req/s] [内存消耗：975.86kb] [文件加载：34]
+[ info ] [ LANG ] E:\web\site\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rkiihr2e884gssmdeechf3plh4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ss.cn/index.php/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3080.5 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'ss.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ E:\web\site\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-27T14:33:04+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/login/login.html
+[ log ] ss.cn/index.php/admin/login/login.html [运行时间：0.335019s][吞吐率：2.98req/s] [内存消耗：1,922.18kb] [文件加载：56]
+[ info ] [ LANG ] E:\web\site\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rkiihr2e884gssmdeechf3plh4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ss.cn/index.php/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3080.5 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://ss.cn',
+  'cache-control' => 'max-age=0',
+  'content-length' => '44',
+  'connection' => 'close',
+  'host' => 'ss.cn',
+)
+[ info ] [ PARAM ] array (
+  'login_name' => 'admin',
+  'login_pwd' => 'admin',
+  'verify' => 'h3ac',
+)
+[ info ] [ RUN ] app\admin\controller\LoginController->login[ E:\web\site\application\admin\controller\LoginController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] E:\web\site\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.089005s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_user` [ RunTime:0.066004s ]
+[ sql ] [ SQL ] SELECT `id`,`login_name`,`status`,`last_login_time`,`last_login_ip`,`session_id` FROM `s_user` WHERE  `login_name` = 'admin' LIMIT 1 [ RunTime:0.057003s ]
+[ sql ] [ SQL ] UPDATE `s_user`  SET `last_login_time`='2017-05-27 14:33:04',`last_login_ip`='127.0.0.1',`session_id`='rkiihr2e884gssmdeechf3plh4'  WHERE  `id` = 1 [ RunTime:0.057003s ]
+
+---------------------------------------------------------------
+[ 2017-05-27T14:33:06+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/index.html
+[ log ] ss.cn/index.php/admin/index/index.html [运行时间：1.158067s][吞吐率：0.86req/s] [内存消耗：1,949.56kb] [文件加载：53]
+[ info ] [ LANG ] E:\web\site\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rkiihr2e884gssmdeechf3plh4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ss.cn/index.php/admin/login/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3080.5 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ss.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ E:\web\site\application\admin\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\web\site/application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'controller',
+  2 => 'total_member',
+  3 => 'today_member',
+  4 => 'today_login',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.089005s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_auth_rule` [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SELECT * FROM `s_auth_rule` WHERE  `status` = 1 ORDER BY `sort`  asc,`id`  asc [ RunTime:0.063004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_auth_group_access` [ RunTime:0.067003s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `s_auth_group_access` `AuthGroupAccess` LEFT JOIN `s_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='1' ) [ RunTime:0.064003s ]
+[ sql ] [ SQL ] SELECT `condition`,`name` FROM `s_auth_rule` WHERE  `id` IN (1,2,3,6,7,8,9,10,11,17,44,45,46,47,48,19,31,32,33,34,35,36,37,14,13,20,21,22,23,24,15,25,26,27,28,29,30,54,57,56,55,58,59)  AND `type` = 1 [ RunTime:0.060004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_user` [ RunTime:0.066004s ]
+[ sql ] [ SQL ] SELECT `session_id` FROM `s_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.060003s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.087005s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_member` [ RunTime:0.063004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_member` LIMIT 1 [ RunTime:0.055003s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112006s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_member` WHERE  (  to_days(add_time)=to_days(now()) ) LIMIT 1 [ RunTime:0.075005s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084004s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_member` WHERE  (  to_days(login_time)=to_days(now()) ) LIMIT 1 [ RunTime:0.063004s ]
+
+---------------------------------------------------------------
+[ 2017-05-27T14:33:27+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/index
+[ log ] ss.cn/index.php/admin/index/index [运行时间：1.092063s][吞吐率：0.92req/s] [内存消耗：1,823.32kb] [文件加载：51]
+[ info ] [ LANG ] E:\web\site\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rkiihr2e884gssmdeechf3plh4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ss.cn/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3080.5 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ss.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ E:\web\site\application\admin\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\web\site/application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'controller',
+  2 => 'total_member',
+  3 => 'today_member',
+  4 => 'today_login',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.078004s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_auth_rule` [ RunTime:0.060004s ]
+[ sql ] [ SQL ] SELECT * FROM `s_auth_rule` WHERE  `status` = 1 ORDER BY `sort`  asc,`id`  asc [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_auth_group_access` [ RunTime:0.058003s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `s_auth_group_access` `AuthGroupAccess` LEFT JOIN `s_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='1' ) [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT `condition`,`name` FROM `s_auth_rule` WHERE  `id` IN (1,2,3,6,7,8,9,10,11,17,44,45,46,47,48,19,31,32,33,34,35,36,37,14,13,20,21,22,23,24,15,25,26,27,28,29,30,54,57,56,55,58,59)  AND `type` = 1 [ RunTime:0.051002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_user` [ RunTime:0.059003s ]
+[ sql ] [ SQL ] SELECT `session_id` FROM `s_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.052003s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.091005s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_member` [ RunTime:0.065004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_member` LIMIT 1 [ RunTime:0.059003s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115007s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_member` WHERE  (  to_days(add_time)=to_days(now()) ) LIMIT 1 [ RunTime:0.078004s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.090006s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_member` WHERE  (  to_days(login_time)=to_days(now()) ) LIMIT 1 [ RunTime:0.059003s ]
+
+---------------------------------------------------------------
+[ 2017-05-27T14:33:31+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/replys/artist.html
+[ log ] ss.cn/index.php/admin/replys/artist.html [运行时间：0.886051s][吞吐率：1.13req/s] [内存消耗：1,937.62kb] [文件加载：57]
+[ info ] [ LANG ] E:\web\site\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'replys',
+    2 => 'artist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rkiihr2e884gssmdeechf3plh4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ss.cn/index.php/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3080.5 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ss.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ReplysController->artist[ E:\web\site\application\admin\controller\ReplysController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094005s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_auth_group_access` [ RunTime:0.069004s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `s_auth_group_access` `AuthGroupAccess` LEFT JOIN `s_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='1' ) [ RunTime:0.060004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_auth_rule` [ RunTime:0.068003s ]
+[ sql ] [ SQL ] SELECT `condition`,`name` FROM `s_auth_rule` WHERE  `id` IN (1,2,3,6,7,8,9,10,11,17,44,45,46,47,48,19,31,32,33,34,35,36,37,14,13,20,21,22,23,24,15,25,26,27,28,29,30,54,57,56,55,58,59)  AND `type` = 1 [ RunTime:0.061003s ]
+[ sql ] [ SQL ] SELECT * FROM `s_auth_rule` WHERE  `status` = 1 ORDER BY `sort`  asc,`id`  asc [ RunTime:0.062004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_user` [ RunTime:0.066004s ]
+[ sql ] [ SQL ] SELECT `session_id` FROM `s_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.062003s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.087005s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_artist_replys` [ RunTime:0.065004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_artist_replys` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.057003s ]
+[ sql ] [ SQL ] SELECT * FROM `s_artist_replys` WHERE  `status` = 0 ORDER BY add_time DESC LIMIT 0,15 [ RunTime:0.059003s ]
+[ error ] [0]模板文件不存在:E:\web\site/application/admin\view\replys\artist.html[E:\web\site\thinkphp\library\think\view\driver\Think.php:80]
+
+---------------------------------------------------------------
+[ 2017-05-27T14:33:34+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/index
+[ log ] ss.cn/index.php/admin/index/index [运行时间：1.111063s][吞吐率：0.90req/s] [内存消耗：1,823.32kb] [文件加载：51]
+[ info ] [ LANG ] E:\web\site\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rkiihr2e884gssmdeechf3plh4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ss.cn/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3080.5 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ss.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ E:\web\site\application\admin\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\web\site/application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'controller',
+  2 => 'total_member',
+  3 => 'today_member',
+  4 => 'today_login',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.087005s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_auth_rule` [ RunTime:0.064004s ]
+[ sql ] [ SQL ] SELECT * FROM `s_auth_rule` WHERE  `status` = 1 ORDER BY `sort`  asc,`id`  asc [ RunTime:0.058003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_auth_group_access` [ RunTime:0.063004s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `s_auth_group_access` `AuthGroupAccess` LEFT JOIN `s_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='1' ) [ RunTime:0.060003s ]
+[ sql ] [ SQL ] SELECT `condition`,`name` FROM `s_auth_rule` WHERE  `id` IN (1,2,3,6,7,8,9,10,11,17,44,45,46,47,48,19,31,32,33,34,35,36,37,14,13,20,21,22,23,24,15,25,26,27,28,29,30,54,57,56,55,58,59)  AND `type` = 1 [ RunTime:0.060004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_user` [ RunTime:0.067004s ]
+[ sql ] [ SQL ] SELECT `session_id` FROM `s_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.057003s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.091005s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_member` [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_member` LIMIT 1 [ RunTime:0.061004s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.087005s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_member` WHERE  (  to_days(add_time)=to_days(now()) ) LIMIT 1 [ RunTime:0.058003s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100006s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_member` WHERE  (  to_days(login_time)=to_days(now()) ) LIMIT 1 [ RunTime:0.062004s ]
+
+---------------------------------------------------------------
+[ 2017-05-27T14:33:40+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/replys/goods.html
+[ log ] ss.cn/index.php/admin/replys/goods.html [运行时间：0.799046s][吞吐率：1.25req/s] [内存消耗：1,922.38kb] [文件加载：57]
+[ info ] [ LANG ] E:\web\site\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'replys',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rkiihr2e884gssmdeechf3plh4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ss.cn/index.php/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3080.5 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ss.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ReplysController->goods[ E:\web\site\application\admin\controller\ReplysController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084005s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_auth_group_access` [ RunTime:0.062003s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `s_auth_group_access` `AuthGroupAccess` LEFT JOIN `s_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='1' ) [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_auth_rule` [ RunTime:0.064004s ]
+[ sql ] [ SQL ] SELECT `condition`,`name` FROM `s_auth_rule` WHERE  `id` IN (1,2,3,6,7,8,9,10,11,17,44,45,46,47,48,19,31,32,33,34,35,36,37,14,13,20,21,22,23,24,15,25,26,27,28,29,30,54,57,56,55,58,59)  AND `type` = 1 [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SELECT * FROM `s_auth_rule` WHERE  `status` = 1 ORDER BY `sort`  asc,`id`  asc [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_user` [ RunTime:0.062004s ]
+[ sql ] [ SQL ] SELECT `session_id` FROM `s_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.056003s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084005s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_goods_replys` [ RunTime:0.063004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_goods_replys` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.056003s ]
+[ sql ] [ SQL ] SELECT * FROM `s_goods_replys` WHERE  `status` = 0 ORDER BY add_time DESC LIMIT 0,15 [ RunTime:0.057003s ]
+[ error ] [0]模板文件不存在:E:\web\site/application/admin\view\replys\goods.html[E:\web\site\thinkphp\library\think\view\driver\Think.php:80]
+
+---------------------------------------------------------------
+[ 2017-05-27T14:33:48+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/index
+[ log ] ss.cn/index.php/admin/index/index [运行时间：1.079062s][吞吐率：0.93req/s] [内存消耗：1,823.32kb] [文件加载：51]
+[ info ] [ LANG ] E:\web\site\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rkiihr2e884gssmdeechf3plh4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ss.cn/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3080.5 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ss.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ E:\web\site\application\admin\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\web\site/application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'controller',
+  2 => 'total_member',
+  3 => 'today_member',
+  4 => 'today_login',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.090005s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_auth_rule` [ RunTime:0.072004s ]
+[ sql ] [ SQL ] SELECT * FROM `s_auth_rule` WHERE  `status` = 1 ORDER BY `sort`  asc,`id`  asc [ RunTime:0.062004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_auth_group_access` [ RunTime:0.068003s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `s_auth_group_access` `AuthGroupAccess` LEFT JOIN `s_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='1' ) [ RunTime:0.060004s ]
+[ sql ] [ SQL ] SELECT `condition`,`name` FROM `s_auth_rule` WHERE  `id` IN (1,2,3,6,7,8,9,10,11,17,44,45,46,47,48,19,31,32,33,34,35,36,37,14,13,20,21,22,23,24,15,25,26,27,28,29,30,54,57,56,55,58,59)  AND `type` = 1 [ RunTime:0.062003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_user` [ RunTime:0.067004s ]
+[ sql ] [ SQL ] SELECT `session_id` FROM `s_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.062003s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.077005s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_member` [ RunTime:0.058003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_member` LIMIT 1 [ RunTime:0.053003s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.079005s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_member` WHERE  (  to_days(add_time)=to_days(now()) ) LIMIT 1 [ RunTime:0.052003s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.092005s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_member` WHERE  (  to_days(login_time)=to_days(now()) ) LIMIT 1 [ RunTime:0.060003s ]
+
+---------------------------------------------------------------
+[ 2017-05-27T14:33:49+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/index.html
+[ log ] ss.cn/index.php/admin/index/index.html [运行时间：1.098063s][吞吐率：0.91req/s] [内存消耗：1,823.28kb] [文件加载：51]
+[ info ] [ LANG ] E:\web\site\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rkiihr2e884gssmdeechf3plh4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ss.cn/index.php/admin/login/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3080.5 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ss.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ E:\web\site\application\admin\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\web\site/application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'controller',
+  2 => 'total_member',
+  3 => 'today_member',
+  4 => 'today_login',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081004s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_auth_rule` [ RunTime:0.059004s ]
+[ sql ] [ SQL ] SELECT * FROM `s_auth_rule` WHERE  `status` = 1 ORDER BY `sort`  asc,`id`  asc [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_auth_group_access` [ RunTime:0.060003s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `s_auth_group_access` `AuthGroupAccess` LEFT JOIN `s_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='1' ) [ RunTime:0.055004s ]
+[ sql ] [ SQL ] SELECT `condition`,`name` FROM `s_auth_rule` WHERE  `id` IN (1,2,3,6,7,8,9,10,11,17,44,45,46,47,48,19,31,32,33,34,35,36,37,14,13,20,21,22,23,24,15,25,26,27,28,29,30,54,57,56,55,58,59)  AND `type` = 1 [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_user` [ RunTime:0.060003s ]
+[ sql ] [ SQL ] SELECT `session_id` FROM `s_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.052002s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102005s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_member` [ RunTime:0.075005s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_member` LIMIT 1 [ RunTime:0.067004s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.086004s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_member` WHERE  (  to_days(add_time)=to_days(now()) ) LIMIT 1 [ RunTime:0.056004s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104006s ] mysql:dbname=site;host=120.55.163.186;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_member` WHERE  (  to_days(login_time)=to_days(now()) ) LIMIT 1 [ RunTime:0.070004s ]
+
+---------------------------------------------------------------
