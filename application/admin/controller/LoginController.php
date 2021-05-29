@@ -24,14 +24,7 @@ class LoginController extends Controller {
 	 * 判断是否重复登录
 	 */
 	public function online(){
-		$user = Db::name('user')->field('session_id')->where('id', session('admin_id'))->find();
-		if($user['session_id'] != session_id()){
-			Session::delete('admin_id');
-        	Session::delete('admin_name');
-			return 1;//不同用户
-		}else{
-			return -1;
-		}
+		return 1;
 	}
 
     /**
