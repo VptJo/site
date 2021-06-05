@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:51:"E:\web\site/application/admin\view\index\index.html";i:1495866896;s:44:"E:\web\site/application/admin\view\base.html";i:1495860029;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:47:"E:\web\site/application/admin\view\act\add.html";i:1495866896;s:44:"E:\web\site/application/admin\view\base.html";i:1495860029;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -64,30 +64,55 @@
 			<!--主体-->
 			
 <div class="layui-body">
-    <!--tab标签-->
-    <div class="layui-tab layui-tab-brief">
-        <ul class="layui-tab-title">
-            <li class="layui-this">网站概览</li>
-        </ul>
-        <div class="layui-tab-content">
-            <div class="layui-tab-item layui-show">
-                <table class="layui-table">
-                    <tr>
-                        <td style="font-size: 18px;width: 180px;">当前会员总数</td>
-                        <td style="font-size: 18px;"><?php echo $total_member; ?></td>
-                    </tr>
-                    <tr>
-                        <td style="font-size: 18px;">今日注册会员</td>
-                        <td style="font-size: 18px;"><?php echo $today_member; ?></td>
-                    </tr>
-                    <tr>
-                        <td style="font-size: 18px;">今日登录会员</td>
-                        <td style="font-size: 18px;"><?php echo $today_login; ?></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
+	<!--tab标签-->
+	<div class="layui-tab layui-tab-brief">
+		<ul class="layui-tab-title">
+			<li class="">
+				<a href="<?php echo url('admin/act/index'); ?>">活动管理</a>
+			</li>
+			<li class="layui-this">添加活动</li>
+		</ul>
+		<div class="layui-tab-content">
+			<div class="layui-tab-item layui-show">
+				<form class="layui-form form-container" action="<?php echo url('admin/act/add'); ?>" method="post">
+					
+					<div class="layui-form-item">
+						<label class="layui-form-label">标题</label>
+						<div class="layui-input-block">
+							<input type="text" name="title" required lay-verify="required" placeholder="请输入标题" class="layui-input">
+						</div>
+					</div>
+				<div class="layui-form-item">
+						<label class="layui-form-label">活动封面</label>
+						<div class="layui-input-block" id="upload-div">
+							<img src="" class="img-see" />
+							<input type="text" name="thumb" readonly class="layui-input layui-input-inline">
+							<input type="file" name="file" class="layui-upload-file">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">详细内容</label>
+						<div class="layui-input-block">
+							<textarea id="content" name="content" class="layui-textarea" lay-verify="content"></textarea>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">状态</label>
+						<div class="layui-input-block">
+							<input type="radio" name="status" value="1" title="显示" checked="checked">
+							<input type="radio" name="status" value="0" title="隐藏">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<div class="layui-input-block">
+							<button class="layui-btn" lay-submit lay-filter="*">保存</button>
+							<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 </div>
 
 
@@ -105,6 +130,9 @@
 		<script src="/public/static/js/jquery.min.js"></script>
 		<script src="/public/static/layui/layui.js"></script>
 		
+<script src="__JS__/kindeditor/kindeditor.config.js"></script>
+<script src="__JS__/kindeditor/kindeditor-all-min.js"></script>
+
 
 		<script>
 			// 定义全局JS变量
@@ -119,6 +147,37 @@
 
 		<!--页面JS脚本-->
 		
+<script>
+	$(document).ready(function() {
+		var _kindEditor;
+		KindEditor.ready(function(K) {
+			_kindEditor = K.create('#content', KindEditorOptions);
+			K('#upload-photo-btn').click(function() {
+				var photo_list_item = '';
+				_kindEditor.loadPlugin('multiimage', function() {
+					_kindEditor.plugin.multiImageDialog({
+						showRemote: false,
+						imageUrl: K('#photo').val(),
+						clickFn: function(data) {
+							$.each(data, function(index, item) {
+								photo_list_item += '<div class="photo-list"><img src="' + item.url +
+									'" class="photo-see" /><input type="text" name="photo[' + item.url + ']" style="display:none;">';
+								photo_list_item += '<button class="layui-btn layui-btn-danger remove-photo-btn">移除</button></div>';
+							});
+							$('#photo-container').append(photo_list_item);
+							_kindEditor.hideDialog();
+						}
+					});
+				});
+			});
+		});
+
+		$('#photo-container').on('click', '.remove-photo-btn', function() {
+			$(this).parent('.photo-list').remove();
+		});
+	});
+</script>
+
 	</body>
 
 </html>

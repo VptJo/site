@@ -13,6 +13,20 @@ function md5_salt($password) {
 function now_time(){
 	return date('Y-m-d H:i:s',time());
 }
+function cache_data($data){
+		$list = db("setting")->select();
+		$temp=array();
+		foreach ($list as $key => $value) {
+				$temp[$value['key']] = $value['value'];
+		}
+		foreach ($data as $key => $value) {
+			if (isset($temp[$key])) {
+				db("setting")-> insert(['key' => $key, 'value' => trim($value)]);
+			} else {
+				db("setting") ->where("key='$key'")-> update(array( 'value' => trim($value)));
+			}
+		}
+}
 function getOpenId(){
 //		$we_config = get_config('payment_config');
 ////		define("APPID", $we_config['wxpay_appid']);

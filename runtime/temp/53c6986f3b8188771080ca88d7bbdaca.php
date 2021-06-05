@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:51:"E:\web\site/application/admin\view\index\index.html";i:1495866896;s:44:"E:\web\site/application/admin\view\base.html";i:1495860029;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:52:"E:\web\site/application/admin\view\replys\goods.html";i:1495866897;s:44:"E:\web\site/application/admin\view\base.html";i:1495860029;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -64,30 +64,55 @@
 			<!--主体-->
 			
 <div class="layui-body">
-    <!--tab标签-->
-    <div class="layui-tab layui-tab-brief">
-        <ul class="layui-tab-title">
-            <li class="layui-this">网站概览</li>
-        </ul>
-        <div class="layui-tab-content">
-            <div class="layui-tab-item layui-show">
-                <table class="layui-table">
-                    <tr>
-                        <td style="font-size: 18px;width: 180px;">当前会员总数</td>
-                        <td style="font-size: 18px;"><?php echo $total_member; ?></td>
-                    </tr>
-                    <tr>
-                        <td style="font-size: 18px;">今日注册会员</td>
-                        <td style="font-size: 18px;"><?php echo $today_member; ?></td>
-                    </tr>
-                    <tr>
-                        <td style="font-size: 18px;">今日登录会员</td>
-                        <td style="font-size: 18px;"><?php echo $today_login; ?></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
+	<!--tab标签-->
+	<div class="layui-tab layui-tab-brief">
+		<ul class="layui-tab-title">
+			<li class="layui-this">物料评论审核</li>
+		</ul>
+		<div class="layui-tab-content">
+			<div class="layui-tab-item layui-show">
+
+				<form class="layui-form layui-form-pane" action="<?php echo url('admin/replys/goods'); ?>" method="get">
+					<div class="layui-inline">
+						<label class="layui-form-label">关键词</label>
+						<div class="layui-input-inline">
+							<input type="text" name="keyword" value="<?php echo $keyword; ?>" placeholder="请输入关键词" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-inline">
+						<button class="layui-btn">搜索</button>
+					</div>
+				</form>
+				<hr>
+
+				<table class="layui-table">
+					<thead>
+						<tr>
+							<th>姓名</th>
+							<th>内容</th>
+							<th>回复时间</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php if(is_array($list) || $list instanceof \think\Collection): if( count($list)==0 ) : echo "" ;else: foreach($list as $key=>$vo): ?>
+						<tr>
+							<td><?php echo $vo['name']; ?></td>
+							<td><?php echo $vo['message']; ?></td>
+							<td><?php echo $vo['add_time']; ?></td>
+							<td>
+								<a href="<?php echo url('admin/replys/goods_audit',['id'=>$vo['id']]); ?>" class="layui-btn layui-btn-normal layui-btn-small ajax-do">通过</a>
+								<a href="<?php echo url('admin/replys/goods_del',['id'=>$vo['id']]); ?>" class="layui-btn layui-btn-danger layui-btn-small ajax-delete">删除</a>
+							</td>
+						</tr>
+						<?php endforeach; endif; else: echo "" ;endif; ?>
+					</tbody>
+				</table>
+				<!--分页-->
+				<?php echo $list->render(); ?>
+			</div>
+		</div>
+	</div>
 </div>
 
 
@@ -119,6 +144,12 @@
 
 		<!--页面JS脚本-->
 		
+<script>
+	var GV = {
+		current_controller: "admin/<?php echo $controller; ?>/goods"
+	};
+</script>
+
 	</body>
 
 </html>

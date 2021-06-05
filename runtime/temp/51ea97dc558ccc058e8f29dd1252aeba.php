@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:51:"E:\web\site/application/admin\view\index\index.html";i:1495866896;s:44:"E:\web\site/application/admin\view\base.html";i:1495860029;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:54:"E:\web\site/application/admin\view\category\index.html";i:1495866896;s:44:"E:\web\site/application/admin\view\base.html";i:1495860029;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -67,23 +67,34 @@
     <!--tab标签-->
     <div class="layui-tab layui-tab-brief">
         <ul class="layui-tab-title">
-            <li class="layui-this">网站概览</li>
+            <li class="layui-this">栏目管理</li>
+            <li class=""><a href="<?php echo url('admin/category/add'); ?>">添加栏目</a></li>
         </ul>
         <div class="layui-tab-content">
             <div class="layui-tab-item layui-show">
                 <table class="layui-table">
+                    <thead>
                     <tr>
-                        <td style="font-size: 18px;width: 180px;">当前会员总数</td>
-                        <td style="font-size: 18px;"><?php echo $total_member; ?></td>
+                        <th style="width: 30px;">ID</th>
+                        <th style="width: 30px;">排序</th>
+                        <th>栏目名称</th>
+                        <th>操作</th>
                     </tr>
+                    </thead>
+                    <tbody>
+                    <?php if(is_array($category_level_list) || $category_level_list instanceof \think\Collection): if( count($category_level_list)==0 ) : echo "" ;else: foreach($category_level_list as $key=>$vo): ?>
                     <tr>
-                        <td style="font-size: 18px;">今日注册会员</td>
-                        <td style="font-size: 18px;"><?php echo $today_member; ?></td>
+                        <td><?php echo $vo['id']; ?></td>
+                        <td><?php echo $vo['sort']; ?></td>
+                        <td><?php if($vo['level'] != '1'): ?>|<?php for($i=1;$i<$vo['level'];$i++){echo ' ----';} endif; ?> <?php echo $vo['name']; ?></td>
+                        <td>
+                            <a href="<?php echo url('admin/category/add',['pid'=>$vo['id']]); ?>" class="layui-btn layui-btn-small">添加子栏目</a>
+                            <a href="<?php echo url('admin/category/update',['id'=>$vo['id']]); ?>" class="layui-btn layui-btn-normal layui-btn-small">编辑</a>
+                            <a href="<?php echo url('admin/category/delete',['id'=>$vo['id']]); ?>" class="layui-btn layui-btn-danger layui-btn-small ajax-delete">删除</a>
+                        </td>
                     </tr>
-                    <tr>
-                        <td style="font-size: 18px;">今日登录会员</td>
-                        <td style="font-size: 18px;"><?php echo $today_login; ?></td>
-                    </tr>
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
+                    </tbody>
                 </table>
             </div>
         </div>

@@ -9,7 +9,11 @@ class IndexController extends BaseController {
 	public function index() {
 		return $this->fetch();
 	}
-
+	public function about(){
+		$content=db("setting")->where("key","content")->find();
+		$this->assign("content",html_entity_decode($content['value']));
+		return $this->fetch();
+	}
 	public function getToken() {
 		$appid = config("appid");
 		$appsecret = config("appsecret");

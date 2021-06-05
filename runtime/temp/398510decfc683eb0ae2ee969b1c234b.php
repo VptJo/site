@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:51:"E:\web\site/application/admin\view\index\index.html";i:1495866896;s:44:"E:\web\site/application/admin\view\base.html";i:1495860029;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:52:"E:\web\site/application/admin\view\category\add.html";i:1495866896;s:44:"E:\web\site/application/admin\view\base.html";i:1495860029;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -67,24 +67,56 @@
     <!--tab标签-->
     <div class="layui-tab layui-tab-brief">
         <ul class="layui-tab-title">
-            <li class="layui-this">网站概览</li>
+            <li class=""><a href="<?php echo url('admin/category/index'); ?>">栏目管理</a></li>
+            <li class="layui-this">添加栏目</li>
         </ul>
         <div class="layui-tab-content">
             <div class="layui-tab-item layui-show">
-                <table class="layui-table">
-                    <tr>
-                        <td style="font-size: 18px;width: 180px;">当前会员总数</td>
-                        <td style="font-size: 18px;"><?php echo $total_member; ?></td>
-                    </tr>
-                    <tr>
-                        <td style="font-size: 18px;">今日注册会员</td>
-                        <td style="font-size: 18px;"><?php echo $today_member; ?></td>
-                    </tr>
-                    <tr>
-                        <td style="font-size: 18px;">今日登录会员</td>
-                        <td style="font-size: 18px;"><?php echo $today_login; ?></td>
-                    </tr>
-                </table>
+                <form class="layui-form form-container" action="<?php echo url('admin/category/add'); ?>" method="post">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">上级栏目</label>
+                        <div class="layui-input-block">
+                            <select name="pid" lay-verify="required">
+                                <option value="0">一级栏目</option>
+                                <?php if(is_array($category_level_list) || $category_level_list instanceof \think\Collection): if( count($category_level_list)==0 ) : echo "" ;else: foreach($category_level_list as $key=>$vo): ?>
+                                <option value="<?php echo $vo['id']; ?>" <?php if($pid==$vo['id']): ?> selected="selected"<?php endif; ?>><?php if($vo['level'] != '1'): ?>|<?php for($i=1;$i<$vo['level'];$i++){echo ' ----';} endif; ?> <?php echo $vo['name']; ?></option>
+                                <?php endforeach; endif; else: echo "" ;endif; ?>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">栏目名称</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="name" value="" required  lay-verify="required" placeholder="请输入栏目名称" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">图标</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="icon" value="" placeholder="（选填）如：fa fa-home" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">缩略图</label>
+                        <div class="layui-input-block" id="upload-div">
+							<img src="" class="img-see" />
+							<input type="text" name="thumb" readonly class="layui-input layui-input-inline">
+							<input type="file" name="file" class="layui-upload-file">
+						</div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">排序</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="sort" value="0" required  lay-verify="required" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn" lay-submit lay-filter="*">保存</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

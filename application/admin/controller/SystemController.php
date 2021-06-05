@@ -39,7 +39,17 @@ class SystemController extends AdminBaseController {
 	        return $this->fetch('site', ['site_config' => $site_config]);
         }
     }
-	
+	public function about(){
+		if ($this->request->isPost()) {
+			$data = $this->request->post();
+			cache_data($data);
+			$this->success('保存成功');
+		} else {
+			$content=db("setting")->where("key","content")->find();
+			$this->assign("content",$content);
+			return $this->fetch();
+		}
+	}
 	/**
      * 清除缓存
      */

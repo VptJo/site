@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:51:"E:\web\site/application/index\view\index\index.html";i:1495860270;s:44:"E:\web\site/application/index\view\base.html";i:1495860404;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:51:"E:\web\site/application/index\view\index\index.html";i:1495860270;s:44:"E:\web\site/application/index\view\base.html";i:1495871921;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -53,10 +53,10 @@
 			<div class="dh_nav">
 				<ul class="container">
 					<li class='home'>
-						<a class="navHome" href="/a/index.htm">网站首页</a>
+						<a class="cur" href="/a/index.htm">网站首页</a>
 					</li>
 					<li>
-						<a href='/a/guanyuwomen/' class='cur'>关于我们</a>
+						<a href='<?php echo url('about'); ?>' >关于我们</a>
 					</li>
 					<li>
 						<a href="/a/chanpinzhongxin/">产品中心</a>
