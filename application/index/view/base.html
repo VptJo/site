@@ -9,6 +9,7 @@
 		<meta name="author" content="design by www.dede58.com" />
 		<link href="/skin/css/reset.css" rel="stylesheet" type="text/css" />
 		<link href="/skin/css/common.css" rel="stylesheet" type="text/css" />
+		<link href="/skin/css/style.css" rel="stylesheet" type="text/css" />
 		<link href="/skin/css/index.css" rel="stylesheet" type="text/css" />
 		<link href="/skin/css/temp.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="/skin/js/index.js"></script>
@@ -52,7 +53,7 @@
 			<div class="dh_nav">
 				<ul class="container">
 					<li class='home'>
-						<a class="cur" href="/a/index.htm">网站首页</a>
+						<a class="cur" href="{:url('index')}">网站首页</a>
 					</li>
 					<li>
 						<a href='{:url('about')}' >关于我们</a>
@@ -82,23 +83,6 @@
 					</li>
 
 				</ul>
-			</div>
-		</div>
-		<div class="bannerBox">
-			<div id="flashs">
-				<div class="bgitem" id="flashbg0" style="background: url('/skin/images/banner3.jpg') no-repeat scroll center top;
-                height: 420px; width: 100%; cursor: pointer; margin: 0 auto;">
-					<a href="/plus/view.php?aid=92"></a>
-				</div>
-				<div class="bgitem" id="flashbg1" style="background: url('/skin/images/banner2.jpg') no-repeat scroll center top;
-                height: 420px; width: 100%; cursor: pointer; margin: 0 auto;">
-					<a href="/plus/view.php?aid=91"></a>
-				</div>
-				<div class="bgitem" id="flashbg2" style="background: url('/skin/images/banner1.jpg') no-repeat scroll center top;
-                height: 420px; width: 100%; cursor: pointer; margin: 0 auto;">
-					<a href="/plus/view.php?aid=90"></a>
-				</div>
-				<script type="text/javascript" src="/skin/js/flash.js"></script>
 			</div>
 		</div>
 		{block name="body"}{/block}
