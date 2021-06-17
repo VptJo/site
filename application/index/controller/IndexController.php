@@ -5,13 +5,25 @@ namespace app\index\controller;
  * 首页
  */
 class IndexController extends BaseController {
-
+	protected function _initialize() {
+        parent::_initialize();
+        $controller=request()->action();
+		session("contr",$controller);
+    }	
 	public function index() {
 		return $this->fetch();
 	}
 	public function about(){
 		$content=db("setting")->where("key","content")->find();
 		$this->assign("content",html_entity_decode($content['value']));
+		return $this->fetch();
+	}
+	/**
+	 * 成功案例
+	 */
+	public function cas(){
+		$list=db("cas")->paginate(10);
+		$this->assign("list",$list);
 		return $this->fetch();
 	}
 	public function getToken() {
@@ -24,7 +36,6 @@ class IndexController extends BaseController {
 		//转换成数组
 		return $array['access_token'];
 	}
-
 	public function getOpenIdByCode() {
 		$appid = config("appid");
 		$appsecret = config("appsecret");

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:51:"E:\web\site/application/admin\view\goods\index.html";i:1495866896;s:44:"E:\web\site/application/admin\view\base.html";i:1495860029;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:51:"E:\web\site/application/admin\view\goods\index.html";i:1495881826;s:44:"E:\web\site/application/admin\view\base.html";i:1495860029;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -69,7 +69,10 @@
 		<ul class="layui-tab-title">
 			<li class="layui-this">物料管理</li>
 			<li class="">
-				<a href="<?php echo url('admin/goods/add'); ?>">添加物料</a>
+				<a href="<?php echo url('admin/goods/add'); ?>">添加产品</a>
+			</li>
+			<li class="">
+				<a href="<?php echo url('admin/goods/cates'); ?>">分类管理</a>
 			</li>
 		</ul>
 		<div class="layui-tab-content">

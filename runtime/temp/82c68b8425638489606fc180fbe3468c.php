@@ -1,19 +1,38 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:51:"E:\web\site/application/index\view\index\about.html";i:1495872126;}*/ ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:51:"E:\web\site/application/index\view\index\about.html";i:1495875029;s:44:"E:\web\site/application/index\view\base.html";i:1495881030;}*/ ?>
+<!DOCTYPE html>
+<html lang="zh-CN">
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-		<title>关于我们_营销型大气机械设备类企业网站织梦模板(带手机端)</title>
-		<meta name="keywords" content="" />
-		<meta name="description" content="" />
+		<title>五合新能源</title>
+		<meta name="description" content="{dede:global.cfg_description/}" />
+		<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+		<meta name="author" content="design by www.dede58.com" />
 		<link href="/skin/css/reset.css" rel="stylesheet" type="text/css" />
 		<link href="/skin/css/common.css" rel="stylesheet" type="text/css" />
 		<link href="/skin/css/style.css" rel="stylesheet" type="text/css" />
+		<link href="/skin/css/index.css" rel="stylesheet" type="text/css" />
 		<link href="/skin/css/temp.css" rel="stylesheet" type="text/css" />
-		<script src="/skin/js/jquery-1.4.1.js" type="text/javascript"></script>
-		<script type="text/javascript" src="/skin/js/common.js"></script>
+		<script type="text/javascript" src="/skin/js/index.js"></script>
+		<script type="text/javascript" src="/skin/js/msclass.js"></script>
+		<script src="/skin/js/scrollpic.js" type="text/javascript"></script>
+				<link rel="stylesheet" href="/public/static/css/admin.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="/skin/js/jquery.js"></script>
+		<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/index.php">
+		<script type="text/javascript">
+			if(window.location.toString().indexOf('pref=padindex') != -1) {} else {
+				if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))) {
+					if(window.location.href.indexOf("?mobile") < 0) {
+						try {
+							if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+								window.location.href = "{dede:global.cfg_mobileurl/}/index.php";
+							} else if(/iPad/i.test(navigator.userAgent)) {} else {}
+						} catch(e) {}
+					}
+				}
+			}
+		</script>
 	</head>
 
 	<body>
@@ -36,39 +55,36 @@
 			<div class="dh_nav">
 				<ul class="container">
 					<li class='home'>
-						<a class="navHome" href="/a/index.htm">网站首页</a>
+						<a id="index" class="cur" href="<?php echo url('index'); ?>">网站首页</a>
 					</li>
 					<li>
-						<a href='/a/guanyuwomen/' class='cur'>关于我们</a>
+						<a id="about" href="<?php echo url('about'); ?>" >关于我们</a>
 					</li>
 					<li>
-						<a href="/a/chanpinzhongxin/">产品中心</a>
-					</li>
-
-					<li>
-						<a href="/a/chenggonganli/">成功案例</a>
+						<a id="pros" href="<?php echo url('pros'); ?>">产品中心</a>
 					</li>
 
 					<li>
-						<a href="/a/fuwuzhongxin/">服务中心</a>
+						<a id="cganl" href="<?php echo url('cas'); ?>">成功案例</a>
 					</li>
 
 					<li>
-						<a href="/a/zixunzhongxin/">资讯中心</a>
+						<a id="service" href="/a/fuwuzhongxin/">服务中心</a>
 					</li>
 
 					<li>
-						<a href="/a/gongsishili/">公司实力</a>
+						<a id="news" href="/a/zixunzhongxin/">资讯中心</a>
 					</li>
 
+
 					<li>
-						<a href="/a/lianxiwomen/">联系我们</a>
+						<a id="lxwe" href="/a/lianxiwomen/">联系我们</a>
 					</li>
 
 				</ul>
 			</div>
 		</div>
-
+		
 		<!--content:start-->
 		<div class="topadcs" style="background: url('/skin/images/aboutbanner.jpg') no-repeat scroll center;
         height:300px"> </div>
@@ -169,14 +185,10 @@
 			</div>
 			<div class="clear"> </div>
 		</div>
-		<!--content:end-->
+		<script type="text/javascript" src="/skin/js/rollup.min.js"></script>
+		<script src="/skin/js/lazyload.me.js" type="text/javascript"></script>
+		
 
-		<script type="text/javascript">
-			helpLoad();
-			initCommonHeaderKeywords(MARK);
-		</script>
-
-		<!--footer:start-->
 		<div class="footWrap">
 			<div class="footer">
 				<div class="fotBai">
@@ -203,20 +215,13 @@
 				</dl>
 			</div>
 		</div>
-		<script type="text/javascript" src="/skin/js/rollup.min.js"></script>
-		<script src="/skin/js/lazyload.me.js" type="text/javascript"></script>
-		<div class="yqlj container">
-			<h4 class="fl"> <a> <img src="/skin/images/yqljtit.png" width="88" height="48" /></a></h4>
-			<p>
-				<a href='http://www.dede58.com' target='_blank'>织梦模板</a>
-				<a href='http://www.dede58.com' target='_blank'>技术支持</a>
-				<a href='http://www.dede58.com' target='_blank'>织梦源码</a>
-				<a href='http://www.adashuo.com/' target='_blank'>响应式织梦模板</a>
-				<a href='http://www.dede58.com/host/' target='_blank'>织梦主机</a>
-			</p>
-		</div>
-
-		<!--footer:end-->
+		<script>
+			var controller="<?php echo \think\Session::get('contr'); ?>";
+			$(".cur").removeClass("cur");
+			$("#"+controller).addClass("cur");
+		</script>
+		<!--页面JS脚本-->
+		
 	</body>
 
 </html>

@@ -26,11 +26,11 @@ class AdminBaseController extends Controller {
 
 		// 判断登录状态
 		$user = Db::name('user')->field('session_id')->where('id', session('admin_id'))->find();
-		if ($user['session_id'] != session_id()) {
-			Session::delete('admin_id');
-			Session::delete('admin_name');
-			$this->success('该账号已在别处登录！', 'admin/login/index');
-		}
+//		if ($user['session_id'] != session_id()) {
+//			Session::delete('admin_id');
+//			Session::delete('admin_name');
+//			$this->success('该账号已在别处登录！', 'admin/login/index');
+//		}
 	}
 
 	/**

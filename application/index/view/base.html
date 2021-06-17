@@ -15,6 +15,7 @@
 		<script type="text/javascript" src="/skin/js/index.js"></script>
 		<script type="text/javascript" src="/skin/js/msclass.js"></script>
 		<script src="/skin/js/scrollpic.js" type="text/javascript"></script>
+				<link rel="stylesheet" href="/public/static/css/admin.css">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<script type="text/javascript" src="/skin/js/jquery.js"></script>
 		<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/index.php">
@@ -53,33 +54,30 @@
 			<div class="dh_nav">
 				<ul class="container">
 					<li class='home'>
-						<a class="cur" href="{:url('index')}">网站首页</a>
+						<a id="index" class="cur" href="{:url('index')}">网站首页</a>
 					</li>
 					<li>
-						<a href='{:url('about')}' >关于我们</a>
+						<a id="about" href="{:url('about')}" >关于我们</a>
 					</li>
 					<li>
-						<a href="/a/chanpinzhongxin/">产品中心</a>
-					</li>
-
-					<li>
-						<a href="/a/chenggonganli/">成功案例</a>
+						<a id="pros" href="{:url('pros')}">产品中心</a>
 					</li>
 
 					<li>
-						<a href="/a/fuwuzhongxin/">服务中心</a>
+						<a id="cganl" href="{:url('cas')}">成功案例</a>
 					</li>
 
 					<li>
-						<a href="/a/zixunzhongxin/">资讯中心</a>
+						<a id="service" href="/a/fuwuzhongxin/">服务中心</a>
 					</li>
 
 					<li>
-						<a href="/a/gongsishili/">公司实力</a>
+						<a id="news" href="/a/zixunzhongxin/">资讯中心</a>
 					</li>
 
+
 					<li>
-						<a href="/a/lianxiwomen/">联系我们</a>
+						<a id="lxwe" href="/a/lianxiwomen/">联系我们</a>
 					</li>
 
 				</ul>
@@ -112,7 +110,11 @@
 				</dl>
 			</div>
 		</div>
-
+		<script>
+			var controller="{$Think.session.contr}";
+			$(".cur").removeClass("cur");
+			$("#"+controller).addClass("cur");
+		</script>
 		<!--页面JS脚本-->
 		{block name="script"}{/block}
 	</body>

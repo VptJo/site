@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:51:"E:\web\site/application/index\view\index\index.html";i:1495860270;s:44:"E:\web\site/application/index\view\base.html";i:1495871921;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:51:"E:\web\site/application/index\view\index\index.html";i:1495873395;s:44:"E:\web\site/application/index\view\base.html";i:1495881030;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -10,11 +10,13 @@
 		<meta name="author" content="design by www.dede58.com" />
 		<link href="/skin/css/reset.css" rel="stylesheet" type="text/css" />
 		<link href="/skin/css/common.css" rel="stylesheet" type="text/css" />
+		<link href="/skin/css/style.css" rel="stylesheet" type="text/css" />
 		<link href="/skin/css/index.css" rel="stylesheet" type="text/css" />
 		<link href="/skin/css/temp.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="/skin/js/index.js"></script>
 		<script type="text/javascript" src="/skin/js/msclass.js"></script>
 		<script src="/skin/js/scrollpic.js" type="text/javascript"></script>
+				<link rel="stylesheet" href="/public/static/css/admin.css">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<script type="text/javascript" src="/skin/js/jquery.js"></script>
 		<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/index.php">
@@ -53,39 +55,37 @@
 			<div class="dh_nav">
 				<ul class="container">
 					<li class='home'>
-						<a class="cur" href="/a/index.htm">网站首页</a>
+						<a id="index" class="cur" href="<?php echo url('index'); ?>">网站首页</a>
 					</li>
 					<li>
-						<a href='<?php echo url('about'); ?>' >关于我们</a>
+						<a id="about" href="<?php echo url('about'); ?>" >关于我们</a>
 					</li>
 					<li>
-						<a href="/a/chanpinzhongxin/">产品中心</a>
-					</li>
-
-					<li>
-						<a href="/a/chenggonganli/">成功案例</a>
+						<a id="pros" href="<?php echo url('pros'); ?>">产品中心</a>
 					</li>
 
 					<li>
-						<a href="/a/fuwuzhongxin/">服务中心</a>
+						<a id="cganl" href="<?php echo url('cas'); ?>">成功案例</a>
 					</li>
 
 					<li>
-						<a href="/a/zixunzhongxin/">资讯中心</a>
+						<a id="service" href="/a/fuwuzhongxin/">服务中心</a>
 					</li>
 
 					<li>
-						<a href="/a/gongsishili/">公司实力</a>
+						<a id="news" href="/a/zixunzhongxin/">资讯中心</a>
 					</li>
 
+
 					<li>
-						<a href="/a/lianxiwomen/">联系我们</a>
+						<a id="lxwe" href="/a/lianxiwomen/">联系我们</a>
 					</li>
 
 				</ul>
 			</div>
 		</div>
-		<div class="bannerBox">
+		
+<div class="bannerBox">
 			<div id="flashs">
 				<div class="bgitem" id="flashbg0" style="background: url('/skin/images/banner3.jpg') no-repeat scroll center top;
                 height: 420px; width: 100%; cursor: pointer; margin: 0 auto;">
@@ -102,7 +102,6 @@
 				<script type="text/javascript" src="/skin/js/flash.js"></script>
 			</div>
 		</div>
-		
 <div class="mainContent">
   <div class="search container">
     <div class="searchBox">
@@ -353,7 +352,11 @@
 				</dl>
 			</div>
 		</div>
-
+		<script>
+			var controller="<?php echo \think\Session::get('contr'); ?>";
+			$(".cur").removeClass("cur");
+			$("#"+controller).addClass("cur");
+		</script>
 		<!--页面JS脚本-->
 		
 	</body>
